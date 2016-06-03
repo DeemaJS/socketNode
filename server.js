@@ -15,8 +15,9 @@ req.on('static', function () {
   if (file[file.length - 1] == '/') {
     file += 'index.html';
     mode = 'reload';
-}
-createWatcher(file, mode);
+  }
+
+  createWatcher(file, mode);
 });
 next();
 });
